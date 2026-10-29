@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>Praveen Frames | Luxury Custom Frames</title>
+<style>
+:root{
+  --black:#080808;
+  --dark:#111111;
+  --white:#ffffff;
+  --grey:#a6a6a6;
+  --line:#303030;
+  --soft:#f4f4f4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--black);
+  color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a{color:inherit}
+header{
+  background:var(--black);
+  padding:24px 16px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+}
+.logo-icon{font-size:28px}
+header h1{
+  font-size:26px;
+  letter-spacing:5px;
+  margin:4px 0;
+}
+header p{
+  color:var(--grey);
+  font-size:10px;
+  letter-spacing:3px;
+  margin:5px 0;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:22px;
+  padding:15px 10px;
+  background:#101010;
+  border-bottom:1px solid var(--line);
+}
+nav a{
+  text-decoration:none;
+  color:#d5d5d5;
+  font-size:12px;
+  letter-spacing:1px;
+}
+nav a:hover{color:white}
+.hero{
+  text-align:center;
+  padding:76px 20px;
+  background:linear-gradient(145deg,#171717,#050505 75%);
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{
+  font-size:10px;
+  letter-spacing:4px;
+  color:#bdbdbd;
+  text-transform:uppercase;
+}
+.hero h2{
+  font-size:clamp(32px,8vw,55px);
+  line-height:1.2;
+  letter-spacing:2px;
+  margin:22px 0 14px;
+}
+.hero p{
+  color:#b5b5b5;
+  font-size:14px;
+  max-width:420px;
+  margin:0 auto 26px;
+}
+.btn,button{
+  display:inline-block;
+  background:white;
+  color:black;
+  border:1px solid white;
+  border-radius:0;
+  padding:13px 21px;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:.2s;
+}
+.btn:hover,button:hover{
+  background:#bdbdbd;
+  border-color:#bdbdbd;
+}
+.btn-outline{
+  background:transparent;
+  color:white;
+}
+section{
+  max-width:850px;
+  margin:auto;
+  padding:48px 17px;
+  scroll-margin-top:20px;
+}
+.section-title{
+  font-size:25px;
+  text-align:center;
+  letter-spacing:2px;
+  margin:0 0 10px;
+}
+.section-subtitle{
+  color:var(--grey);
+  font-size:13px;
+  text-align:center;
+  margin:0 auto 27px;
+}
+.card{
+  background:#111;
+  border:1px solid var(--line);
+  padding:20px;
+  margin-bottom:15px;
+}
+label{
+  display:block;
+  margin:17px 0 8px;
+  font-size:12px;
+  letter-spacing:1px;
+  color:#ededed;
+}
+input,select,textarea{
+  display:block;
+  width:100%;
+  padding:14px;
+  border:1px solid #414141;
+  border-radius:0;
+  background:#151515;
+  color:white;
+  font-family:inherit;
+  font-size:14px;
+  outline:none;
+}
+input:focus,select:focus,textarea:focus{
+  border-color:white;
+}
+input[type=file]{font-size:12px}
+input::placeholder,textarea::placeholder{color:#858585}
+select option{background:#111;color:white}
+form{margin:0}
+.full{width:100%;margin-top:22px}
+.note{
+  color:#a4a4a4;
+  font-size:12px;
+  line-height:1.8;
+}
+.features{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.feature{
+  border:1px solid var(--line);
+  padding:22px 12px;
+  text-align:center;
+}
+.feature strong{
+  display:block;
+  font-size:12px;
+  letter-spacing:1px;
+  margin-top:8px;
+}
+.feature span{font-size:22px}
+.preview{
+  border:1px solid var(--line);
+  padding:12px;
+  margin-top:12px;
+  text-align:center;
+}
+.preview img{
+  max-width:100%;
+  max-height:260px;
+  object-fit:contain;
+}
+.hidden{display:none!important}
+.contact-line{
+  border-bottom:1px solid var(--line);
+  padding:12px 0;
+  overflow-wrap:anywhere;
+  font-size:14px;
+}
+footer{
+  background:#050505;
+  border-top:1px solid var(--line);
+  padding:32px 16px;
+  text-align:center;
+}
+footer strong{
+  letter-spacing:4px;
+  font-size:17px;
+}
+footer p{font-size:11px;color:#999}
+footer a{color:white}
+hr{border:0;border-top:1px solid var(--line)}
+@media(min-width:600px){
+  header h1{font-size:32px}
+  .features{grid-template-columns:repeat(4,minmax(0,1fr))}
+  section{padding-top:60px;padding-bottom:60px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-icon">◈</div>
+  <h1>PRAVEEN FRAMES</h1>
+  <p>CUSTOM FRAME STUDIO</p>
+</header>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#sizes">FRAME SIZES</a>
+  <a href="#order">ORDER</a>
+  <a href="#login">LOGIN</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<main>
+<div class="hero" id="home">
+  <p class="eyebrow">THE ART OF PRESERVING MEMORIES</p>
+  <h2>YOUR MOMENTS.<br>OUR FRAMES.</h2>
+  <p>Minimal design. Timeless memories. Custom frames made for the moments that matter.</p>
+  <a class="btn" href="#order">PLACE YOUR ORDER</a>
+  <a class="btn btn-outline" href="#sizes">EXPLORE SIZES</a>
+</div>
+
+<section>
+  <p class="eyebrow" style="text-align:center">THE COLLECTION</p>
+  <h2 class="section-title">SIMPLE. CLASSIC. PERSONAL.</h2>
+  <p class="section-subtitle">Choose your preferred frame dimensions and finishing style.</p>
+  <div class="features">
+    <div class="feature">
+      <span>□</span>
+      <strong>CLASSIC SIZES</strong>
+    </div>
+    <div class="feature">
+      <span>◫</span>
+      <strong>CUSTOM PRINTS</strong>
+    </div>
+    <div class="feature">
+      <span>▤</span>
+      <strong>LAMINATION</strong>
+    </div>
+    <div class="feature">
+      <span>◇</span>
+      <strong>FRAME FINISHES</strong>
+    </div>
+  </div>
+</section>
+
+<section id="sizes">
+  <p class="eyebrow" style="text-align:center">FIND YOUR FIT</p>
+  <h2 class="section-title">FRAME SIZES</h2>
+  <p class="section-subtitle">All measurements are in inches.</p>
+  <div class="card">
+    <label for="size">SELECT FRAME SIZE</label>
+    <select id="size">
+      <option value="">Choose your size</option>
+      <option>6×4</option>
+      <option>8×6</option>
+      <option>10×8</option>
+      <option>12×8</option>
+      <option>12×10</option>
+      <option>10×15</option>
+      <option>12×12</option>
+      <option>12×15</option>
+      <option>12×18</option>
+      <option>12×20</option>
+      <option>12×24</option>
+      <option>12×30</option>
+      <option>12×36</option>
+      <option>16×20</option>
+      <option>16×24</option>
+      <option>18×24</option>
+      <option>20×20</option>
+      <option>20×24</option>
+      <option>20×30</option>
+      <option>20×36</option>
+      <option>24×24</option>
+      <option>24×30</option>
+      <option>24×36</option>
+      <option>24×40</option>
+      <option>24×48</option>
+    </select>
+    <button type="button" class="full" onclick="chooseSize()">CONTINUE WITH THIS SIZE</button>
+  </div>
+</section>
+
+<section id="order">
+  <p class="eyebrow" style="text-align:center">MADE FOR YOUR MEMORIES</p>
+  <h2 class="section-title">CUSTOM ORDER</h2>
+  <p class="section-subtitle">Enter your details to request a custom frame.</p>
+
+  <div class="card">
+    <form id="orderForm">
+      <label for="customer">FULL NAME</label>
+      <input id="customer" required placeholder="Your name">
+
+      <label for="phone">MOBILE NUMBER</label>
+      <input id="phone" type="tel" pattern="[6-9][0-9]{9}"
+        required placeholder="10-digit mobile number">
+
+      <label for="frameSize">FRAME SIZE — INCHES</label>
+      <select id="frameSize" required>
+        <option value="">Select frame size</option>
+        <option>6×4</option><option>8×6</option>
+        <option>10×8</option><option>12×8</option>
+        <option>12×10</option><option>10×15</option>
+        <option>12×12</option><option>12×15</option>
+        <option>12×18</option><option>12×20</option>
+        <option>12×24</option><option>12×30</option>
+        <option>12×36</option><option>16×20</option>
+        <option>16×24</option><option>18×24</option>
+        <option>20×20</option><option>20×24</option>
+        <option>20×30</option><option>20×36</option>
+        <option>24×24</option><option>24×30</option>
+        <option>24×36</option><option>24×40</option>
+        <option>24×48</option>
+      </select>
+
+      <label for="frameModel">FRAME FINISH / INCHES</label>
+      <select id="frameModel" required>
+        <option value="">Choose frame finish</option>
+        <option>Print + Normal Lamination</option>
+        <option>Print + ½″ Frame</option>
+        <option>Print + 1″ Frame</option>
+        <option>Print + 1½″ Frame</option>
+      </select>
+
+      <label for="quantity">QUANTITY</label>
+      <input id="quantity" type="number" min="1" max="50"
+        value="1" required>
+
+      <label for="photo">UPLOAD YOUR PHOTO</label>
+      <input id="photo" type="file" accept="image/*" required>
+
+      <div id="preview" class="preview hidden">
+        <p class="note">PHOTO PREVIEW</p>
+        <img id="previewImg" alt="Selected photo preview">
+      </div>
+
+      <label for="address">DELIVERY ADDRESS</label>
+      <textarea id="address" rows="3" required
+        placeholder="Enter your full delivery address"></textarea>
+
+      <label for="notes">SPECIAL INSTRUCTIONS (OPTIONAL)</label>
+      <textarea id="notes" rows="2"
+        placeholder="Any custom requirements"></textarea>
+
+      <hr>
+      <p class="note">
+        PRICE ON REQUEST.<br>
+        ONLINE PAYMENT ONLY.<br>
+        CASH ON DELIVERY IS NOT AVAILABLE.<br>
+        Payment instructions will be shared after the order is reviewed.
+      </p>
+
+      <button type="submit" class="full">REQUEST ORDER VIA WHATSAPP</button>
+    </form>
+  </div>
+</section>
+
+<section id="login">
+  <p class="eyebrow" style="text-align:center">CUSTOMER ACCOUNT</p>
+  <h2 class="section-title">CUSTOMER LOGIN</h2>
+  <p class="section-subtitle">Customer sign-in interface.</p>
+  <div class="card">
+    <form id="loginForm">
+      <label for="loginPhone">MOBILE NUMBER</label>
+      <input id="loginPhone" type="tel"
+        pattern="[6-9][0-9]{9}" required
+        placeholder="Enter your mobile number">
+      <p class="note">Secure account login needs an authentication service.</p>
+      <button type="submit" class="full">CONTINUE TO WHATSAPP</button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="eyebrow" style="text-align:center">WE ARE HERE TO HELP</p>
+  <h2 class="section-title">CONTACT</h2>
+  <div class="card">
+    <div class="contact-line"><strong>SHOP</strong><br>Praveen Frames</div>
+    <div class="contact-line"><strong>OWNER</strong><br>Praveen</div>
+    <div class="contact-line"><strong>PHONE / WHATSAPP</strong><br>6369491617</div>
+    <div class="contact-line"><strong>LOCATION</strong><br>Sirkali, Mayiladuthurai district, Tamil Nadu - 609305</div>
+    <a class="btn full" style="text-align:center"
+      href="https://wa.me/916369491617"
+      target="_blank" rel="noopener">CONTACT ON WHATSAPP</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>PRAVEEN FRAMES</strong>
+  <p>PRESERVE YOUR PRECIOUS MOMENTS.</p>
+  <hr>
+  <p>BLACK. WHITE. TIMELESS.</p>
+  <p>Online payment only · COD unavailable</p>
+  <p>© 2026 Praveen Frames</p>
+</footer>
+
+<script>
+function chooseSize(){
+  const size=document.getElementById('size').value;
+  if(!size){
+    alert('Please select a frame size.');
+    return;
+  }
+  document.getElementById('frameSize').value=size;
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+let photoUrl='';
+
+document.getElementById('photo').addEventListener('change',function(){
+  const file=this.files[0];
+  if(!file)return;
+
+  if(file.size>10*1024*1024){
+    alert('Please choose a photo under 10 MB.');
+    this.value='';
+    return;
+  }
+
+  if(photoUrl)URL.revokeObjectURL(photoUrl);
+  photoUrl=URL.createObjectURL(file);
+  document.getElementById('previewImg').src=photoUrl;
+  document.getElementById('preview').classList.remove('hidden');
+});
+
+document.getElementById('orderForm').addEventListener('submit',function(e){
+  e.preventDefault();
+
+  const file=document.getElementById('photo').files[0];
+  if(!file)return;
+
+  const message=[
+    'PRAVEEN FRAMES - ORDER REQUEST',
+    'Customer: '+document.getElementById('customer').value,
+    'Mobile: '+document.getElementById('phone').value,
+    'Frame size: '+document.getElementById('frameSize').value+' inches',
+    'Frame finish: '+document.getElementById('frameModel').value,
+    'Quantity: '+document.getElementById('quantity').value,
+    'Selected photo filename: '+file.name,
+    'Delivery address: '+document.getElementById('address').value,
+    'Instructions: '+(document.getElementById('notes').value||'None'),
+    'Payment: Online only; awaiting confirmation.'
+  ].join('\n');
+
+  window.open(
+    'https://wa.me/916369491617?text='+encodeURIComponent(message),
+    '_blank'
+  );
+});
+
+document.getElementById('loginForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const phone=document.getElementById('loginPhone').value;
+  const message='Hello Praveen Frames, I want to access my customer account.\nMobile number: '+phone;
+  window.open(
+    'https://wa.me/916369491617?text='+encodeURIComponent(message),
+    '_blank'
+  );
+});
+</script>
+
+</body>
+</html>
